@@ -1,42 +1,80 @@
 .biru {
   background-color: #9dc020;
-  color: rgb(15, 15, 15);
+  color: black;
   border: none;
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 5px;
+  font-size: 1rem;
   text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .biru:hover {
   background-color: white;
-}
-.c-item {
-  height: 615px;
-}
-.c-img {
-  height: 150%;
-}
-.c-c {
-  top: 40%;
-}
-.c-w {
   color: black;
 }
-.c-p {
-  height: 109vh;
-  margin-top: 5em;
+
+.c-item {
+  height: 100vh;
+  position: relative;
 }
-.c-o {
-  margin-top: 50px;
+
+.c-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
-h1 {
-  font-size: 35px;
-  font-weight: 500;
-}
+
 .carousel-caption.c-c {
-  top: 55%;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
+  left: 50%;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.carousel-caption h1,
+.carousel-caption h4 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 24px;
+  }
+
+  .carousel-caption h4 {
+    font-size: 16px;
+  }
+
+  .biru {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-caption h1 {
+    font-size: 20px;
+  }
+
+  .carousel-caption h4 {
+    font-size: 14px;
+  }
+
+  .biru {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }
