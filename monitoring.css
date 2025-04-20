@@ -1,0 +1,34 @@
+.card {
+  margin: 10px;
+  width: 300px;
+}
+
+.card-header {
+  background-color: #9dc020;
+}
+.biru {
+  background-color: #1a0cdd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.biru:hover {
+  background-color: #010d1a;
+}
+
+/* Update: Button-group pakai flexbox untuk responsif dan center */
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+}
